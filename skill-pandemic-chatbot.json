@@ -1,0 +1,1491 @@
+{
+  "intents": [
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Do you want to buy vegetables or fruits"
+        },
+        {
+          "text": "hi i am surya my id is abcd@gmail.com"
+        },
+        {
+          "text": "sea E-mail is sneha@gmail.com"
+        },
+        {
+          "text": "Show the list of fruits"
+        },
+        {
+          "text": "show the list of vegetables"
+        },
+        {
+          "text": "what is special offer on vegetables"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order",
+      "examples": [
+        {
+          "text": "I want to place an order pls take the order"
+        },
+        {
+          "text": "order"
+        },
+        {
+          "text": "take order"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "E-mail",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "buy",
+          "synonyms": [
+            "buy",
+            "purchase"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fruits",
+          "synonyms": [
+            "fruit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "list",
+          "synonyms": [
+            "list"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "offers",
+          "synonyms": [
+            "discount"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vegetables",
+          "synonyms": [
+            "foodstuffs"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Fruits",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chilli Dry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cucumber",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ginger",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Grapes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jackfruit",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Litchi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mango",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Papaya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pineapple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Water Melon",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": [
+            "gf",
+            "good afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "evening",
+            "ge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good morning",
+          "synonyms": [
+            "gm",
+            "good morning"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cauliflower",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chilli Dry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cowpea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cucumber",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ginger",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Grapes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jackfruit",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Litchi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mango",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Papaya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pineapple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pointed Gourd",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pomogranate",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "potato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tomato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Watermelon",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Name",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "Name",
+          "patterns": [
+            "\"^[\\\\p{L} .'-]+$\""
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "order",
+          "synonyms": [
+            "purchase"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "phone",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "phone no",
+          "patterns": [
+            "^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "vegetables",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cauliflower",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cow pea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mango",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pineapple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pointed gourd",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pomogrante",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "potato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tomato",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1602868631618",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "can you provide me with items i want"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1602869081759",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1602869081867",
+      "previous_sibling": "handler_7_1602869081867"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1602871949160",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_10_1602871949178"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you tell me the item u want?if you want you can visit list or buy"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602868631618",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602869080568",
+      "previous_sibling": "node_4_1602876323204"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "how many do u want"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1602870312256",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1602870312275",
+      "previous_sibling": "handler_7_1602870312275"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602869081759",
+      "context": {
+        "items": "@items"
+      },
+      "conditions": "@items",
+      "event_name": "input",
+      "dialog_node": "handler_7_1602869081867"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1602870312256",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_7_1602870312275"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "we accept COD,card,UPI as mode of payment"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1602871949160",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602871949178",
+      "previous_sibling": "handler_10_1602871949178"
+    },
+    {
+      "type": "standard",
+      "title": "Vegetable",
+      "parent": "node_6_1602839281524",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@vegetables",
+      "dialog_node": "node_10_1602865312047",
+      "previous_sibling": "node_2_1602865252186"
+    },
+    {
+      "type": "frame",
+      "title": "order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You, Your order of $number of $items is placed please pay using $payment . your receipt is sent to $E-mail, $phone "
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#order && @order",
+      "digress_in": "returns",
+      "dialog_node": "node_10_1602868631618",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_6_1602839281524",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Fruits",
+      "parent": "node_6_1602839281524",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Fruits",
+      "dialog_node": "node_2_1602865252186"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting context",
+      "output": {
+        "deleted": "<?context.remove('items')?><?context.remove('number')?><?context.remove('payment')?><?context.remove('E-mail')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602868631618",
+      "conditions": "true",
+      "dialog_node": "node_4_1602876323204"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_5_1602778323975",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "digress_in": "returns",
+      "dialog_node": "node_6_1602839281524",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "node_5_1602778323975"
+    },
+    {
+      "type": "standard",
+      "title": "Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, Thank you for sharing your mail-id $Name is used for further references."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "Name": "@Name.literal"
+      },
+      "conditions": "@Name",
+      "dialog_node": "node_6_1602875881091",
+      "previous_sibling": "node_8_1602875512186"
+    },
+    {
+      "type": "standard",
+      "title": "E-mail",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, Thank you for sharing your mail-id $email is used for further references."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "E-mail": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_8_1602875512186"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 85/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Litchi",
+      "dialog_node": "response_10_1602865988700",
+      "previous_sibling": "response_1_1602865961070"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to please an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602839281524",
+      "conditions": "@Enquiry:vegetables",
+      "dialog_node": "response_1_1602855397525",
+      "previous_sibling": "response_4_1602854932513"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Currently no offers"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602839281524",
+      "conditions": "@Enquiry:offers",
+      "dialog_node": "response_1_1602855457602",
+      "previous_sibling": "response_1_1602855397525"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 175/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Grapes",
+      "dialog_node": "response_1_1602865961070",
+      "previous_sibling": "response_5_1602865921035"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 33/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Jackfruit",
+      "dialog_node": "response_1_1602866109382",
+      "previous_sibling": "response_8_1602866082981"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good Evening What would you like to buy",
+            "options": [
+              {
+                "label": "Fruits",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Vegetables",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Fruits",
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "response_type": "image"
+          },
+          {
+            "title": "vegetables",
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602778323975",
+      "conditions": "@greetings:(Good evening)",
+      "dialog_node": "response_2_1602779269544",
+      "previous_sibling": "response_8_1602779153072"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602839281524",
+      "conditions": "@Enquiry:fruits",
+      "dialog_node": "response_2_1602839547433",
+      "previous_sibling": "response_9_1602839414982"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " It cost 105/kg "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Pineapple",
+      "dialog_node": "response_2_1602865381979"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " It cost 105/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:(Sweet Orange)",
+      "dialog_node": "response_2_1602866028629",
+      "previous_sibling": "response_5_1602866009130"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is not a fruit"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:(Chilli Dry)",
+      "dialog_node": "response_2_1602866189576",
+      "previous_sibling": "response_8_1602866156601"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 75/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:(pointed gourd)",
+      "dialog_node": "response_3_1602866337647",
+      "previous_sibling": "response_4_1602866319628"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 55/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:tomato",
+      "dialog_node": "response_3_1602866367733",
+      "previous_sibling": "response_9_1602866354672"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602839281524",
+      "conditions": "@Enquiry:list",
+      "dialog_node": "response_4_1602854932513",
+      "previous_sibling": "response_2_1602839547433"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 35/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:potato",
+      "dialog_node": "response_4_1602866319628",
+      "previous_sibling": "response_7_1602866312130"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 75/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Mango",
+      "dialog_node": "response_5_1602865921035",
+      "previous_sibling": "response_2_1602865381979"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 28/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:(Water Melon)",
+      "dialog_node": "response_5_1602866009130",
+      "previous_sibling": "response_10_1602865988700"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not a vegetable"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:pomogrante",
+      "dialog_node": "response_6_1602866345483",
+      "previous_sibling": "response_3_1602866337647"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "hi What would you like to buy",
+            "options": [
+              {
+                "label": "Fruits",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Vegetables",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1602778323975",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1602779412104",
+      "previous_sibling": "response_9_1602779288054"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 95/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:(Cow pea)",
+      "dialog_node": "response_7_1602866295691"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It cost 85/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:Cauliflower",
+      "dialog_node": "response_7_1602866312130",
+      "previous_sibling": "response_7_1602866295691"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good Morning What would you like to buy",
+            "options": [
+              {
+                "label": "Fruits",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Vegetables",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Fruits",
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "description": "",
+            "response_type": "image"
+          },
+          {
+            "title": "vegetables",
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602778323975",
+      "conditions": "@greetings:(Good morning)",
+      "dialog_node": "response_8_1602779153072"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Its not a fruit"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Cucumber",
+      "dialog_node": "response_8_1602866082981",
+      "previous_sibling": "response_2_1602866028629"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " It cost 83/kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Papaya",
+      "dialog_node": "response_8_1602866131484",
+      "previous_sibling": "response_1_1602866109382"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is not a fruit"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602865252186",
+      "conditions": "@Fruits:Ginger",
+      "dialog_node": "response_8_1602866156601",
+      "previous_sibling": "response_8_1602866131484"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good Afternoon what would you like to buy",
+            "options": [
+              {
+                "label": "Fruits",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Vegetables",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Fruits",
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "response_type": "image"
+          },
+          {
+            "title": "vegetables",
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "please type order to to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602778323975",
+      "conditions": "@greetings:(Good afternoon)",
+      "dialog_node": "response_9_1602779288054",
+      "previous_sibling": "response_2_1602779269544"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "What would you like to buy",
+            "options": [
+              {
+                "label": "Fruits",
+                "value": {
+                  "input": {
+                    "text": "Fruits"
+                  }
+                }
+              },
+              {
+                "label": "vegetables",
+                "value": {
+                  "input": {
+                    "text": "vegetables"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "title": "Fruits",
+            "source": "http://1.bp.blogspot.com/-t_0JVlsVbB4/VYjwEg6jdKI/AAAAAAAAAkw/IBDUaDNyRq4/s1600/Kalimati%2Bretail%2Bprice.png",
+            "response_type": "image"
+          },
+          {
+            "title": "Vegetables",
+            "source": "http://thehimalayantimes.com/wp-content/uploads/2016/05/Vegetables-prices.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Please type order to place an order"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602839281524",
+      "conditions": "@Enquiry:buy",
+      "dialog_node": "response_9_1602839414982",
+      "previous_sibling": "node_10_1602865312047"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not a vegetable"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:pineapple",
+      "dialog_node": "response_9_1602866354672",
+      "previous_sibling": "response_6_1602866345483"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is not a vegetable"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602865312047",
+      "conditions": "@vegetables:Mango",
+      "dialog_node": "response_9_1602866383222",
+      "previous_sibling": "response_3_1602866367733"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1602868631618",
+      "variable": "$items",
+      "dialog_node": "slot_1_1602869081759",
+      "previous_sibling": "handler_1_1602869080568"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1602868631618",
+      "variable": "$number",
+      "dialog_node": "slot_5_1602870312256",
+      "previous_sibling": "slot_1_1602869081759"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1602868631618",
+      "variable": "$payment",
+      "dialog_node": "slot_9_1602871949160",
+      "previous_sibling": "slot_5_1602870312256"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello.I am a bot for essentials shopping.How may I help you."
+              },
+              {
+                "text": "Can you pls provide me Name,Ph no and mail-id"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "hi i am surya my id is abcd@gmail.com"
+    },
+    {
+      "text": "my name is sneha my id is sneha@gmail.com"
+    },
+    {
+      "text": "my name is sneha my id is xyz@gmail.com"
+    },
+    {
+      "text": "sea E-mail is sneha@gmail.com"
+    },
+    {
+      "text": "sneha sneha@gmail.com"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "pandemic chatbot",
+  "language": "en",
+  "description": ""
+}
